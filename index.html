@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogr Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <header class="main-container">
+    <div class="st-container">
+        <img class="logo-image" src="images/logo (1).svg" alt="">
+        <nav class="nav-bar">
+            <ul class="list-desktop">
+                <li class="order-item">
+                    <span class="span-desktop">Product</span>
+                    <img src="images/icon-arrow-light.svg" alt="arrow-image" class="arrow-image" onclick="toggleDropdown('product-dropdown', this)">
+                    <ul id="product-dropdown" class="dropdown-content">
+                        <li>Overview</li>
+                        <li>Pricing</li>
+                        <li>Marketplace</li>
+                        <li>Features</li>
+                        <li>Integrations</li>
+                    </ul>
+                </li>
+                <li class="order-item">
+                    <span class="span-desktop">Company</span>
+                    <img src="images/icon-arrow-light.svg" alt="arrow-image" class="arrow-image" onclick="toggleDropdown('company-dropdown', this)">
+                    <ul id="company-dropdown" class="dropdown-content">
+                        <li>About</li>
+                        <li>Team</li>
+                        <li>Blog</li>
+                        <li>Careers</li>
+                    </ul>
+                </li>
+                <li class="order-item">
+                    <span class="span-desktop">Connect</span>
+                    <img src="images/icon-arrow-light.svg" alt="arrow-image" class="arrow-image" onclick="toggleDropdown('connect-dropdown', this)">
+                    <ul id="connect-dropdown" class="dropdown-content">
+                        <li>Contact</li>
+                        <li>Newsletter</li>
+                        <li>LinkedIn</li>
+                    </ul>
+                </li>
+            </ul>            
+            <div class="right-section">
+                <a href="#">Login</a>
+                <button class="btn"> Sign Up</button>
+             </div>
+        </nav>        
+                   
+                        <!-- for mobile screen size -->
+        <nav class="navbar-mobile">
+            <div class="navbar-content">
+                <img class="logo-image-mobile" src="images/logo (1).svg" alt="">
+                <img class="Open-menu" id="open-menu" src="images/icon-hamburger.svg" alt="icon-hamburger-image">
+            </div>
+            
+            <div class="mobile-content" id="mobile-content">
+                <img class="close-image" id="close-image" src="images/icon-close.svg" alt="close-image">
+                <ul class="order-list=mobile">
+                   <li class="dropdown-mobile">
+                        <span class="span-mobile">Product</span>
+                        <img src="images/icon-arrow-light.svg" alt="arrow" class="arrow-mobile" onclick="toggleDropdown(this)">
+                        <ul class="dropdown-content-mobile">
+                           <li>Overview</li>
+                           <li>Pricing</li>
+                           <li>Marketplace</li>
+                           <li>Features</li>
+                           <li>Integrations</li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-mobile">
+                        <span class="span-mobile">Company</span>
+                        <img src="images/icon-arrow-light.svg" alt="arrow" class="arrow-mobile" onclick="toggleDropdown(this)">
+                        <ul class="dropdown-content-mobile">
+                           <li>About</li>
+                            <li>Team</li>
+                            <li>Blog</li>
+                            <li>Careers</li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-mobile">
+                        <span class="span-mobile">Connect</span>
+                        <img src="images/icon-arrow-light.svg" alt="arrow" class="arrow-mobile" onclick="toggleDropdown(this)">
+                        <ul class="dropdown-content-mobile">
+                            <li>Contact</li>
+                            <li>Newsletter</li>
+                            <li>LinkedIn</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="right-section-mobile">
+                    <a href="#">Login</a>
+                    <button class="btn btn-mobile"> Sign Up</button>
+                </div>   
+            </div>          
+        </nav>
+
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
+        <div class="button-section">
+            <button class="btn-type">Start for Free</button>
+            <button class="btn-typ">Learn More</button>
+        </div>
+    </div>
+    <div class="second-container section">
+        <h4>Designed for the future</h4>
+        <div class="sub-second">
+            <div class="leftside">
+                <h6>Introducing an extensible editor</h6>
+                <span class="blogr-ft-ne">Blogr features exceedingly intuitive interface which lets you focus on one thing; creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos and Markdown. Extensibility with plugins and themes provide easy ways to add functionatlity or change the looks of a blog.</span>
+                <h6 class="robust">Robust content management</h6>
+                <span class="blogr-ft-two">Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you are in full control </span>
+            </div>
+            <div class="rightside">               
+
+                    <img class="desktop-image" src="images/illustration-editor-desktop.svg" alt="desktop-image">           
+
+            </div>
+        </div>
+    </div>
+    <div class="third-container-section">
+        <div class="sub-third">
+            <div class="leftside-third">
+                <img class="phone-image" src="images/illustration-phones.svg" alt="phone-image">
+
+                    <!-- background-image will be shown here -->
+            </div>
+            <div class="rightside-third">
+                <h5>State of the Art infrastructure</h5>
+                <span class="p-text">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your competitive. </span>
+
+            </div>
+        </div>
+    </div>
+    <div class="fourth-container-section">
+        <div class="sub-fourth">
+            <div class="leftside-fourth">
+                   <img class="laptop-image" src="images/illustration-laptop-desktop.svg" alt="">
+            </div>
+
+            <div class="rightside-fourth">
+                <h5 class="header-text"> Free, open, simple</h5>
+                <span class="header-p">Blog is free and open source application by a large community of helpful developers. It supports features such as code syntax highlighting, RRS feeds, social media integration, third-party, commenting tools, and works seamlessly with google analytics. The architecture is clean and relatively easy to learn. </span>
+                <h5 class="header-text"> Powerful tooling</h5>
+                <span class="header-p">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites. </span>
+            </div>
+        </div>
+    </div>
+    <div class="fifth-container-section">
+        <img class="bottom-logo" src="images/logo (1).svg" alt="">
+        <div class="sub-fifth-section">
+            <div class="bottom-order">
+                <ul class="btp-order"> Product
+                    <li class="b-order-list">Overview</li>
+                    <li class="b-order-list">Pricing</li>
+                    <li class="b-order-list">Marketplace</li>
+                    <li class="b-order-list">Features</li>
+                    <li class="b-order-list">Integration</li>
+                </ul>
+                <ul class="btp-order"> Company
+                    <li class="b-order-list" >About</li>
+                    <li class="b-order-list" >Team</li>
+                    <li class="b-order-list" >Blog</li>
+                    <li class="b-order-list">Careers</li>
+                </ul>
+                <ul class="btp-order">Connect
+                    <li class="b-order-list">Contact</li>
+                    <li class="b-order-list">Newsletter</li>
+                    <li class="b-order-list">LinkedIn</li>                  
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+   </header>
+    
+    <script type="module" src="index.js"></script>
+</body>
+</html>
